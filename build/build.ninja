@@ -41,80 +41,42 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = E$:/dev/projects/lowely/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target client
+# Object build statements for EXECUTABLE target lowley
 
 
 #############################################
-# Order-only phony target for client
+# Order-only phony target for lowley
 
-build cmake_object_order_depends_target_client: phony || .
+build cmake_object_order_depends_target_lowley: phony || .
 
-build CMakeFiles/client.dir/client.cpp.obj: CXX_COMPILER__client_unscanned_Debug E$:/dev/projects/lowely/client.cpp || cmake_object_order_depends_target_client
+build CMakeFiles/lowley.dir/main.cpp.obj: CXX_COMPILER__lowley_unscanned_Debug E$:/dev/projects/lowely/main.cpp || cmake_object_order_depends_target_lowley
   CONFIG = Debug
-  DEP_FILE = CMakeFiles\client.dir\client.cpp.obj.d
+  DEP_FILE = CMakeFiles\lowley.dir\main.cpp.obj.d
   FLAGS = -g
-  INCLUDES = -isystem E:/dev/libs/luajit/include -isystem E:/dev/libs/asio/include
-  OBJECT_DIR = CMakeFiles\client.dir
-  OBJECT_FILE_DIR = CMakeFiles\client.dir
-  TARGET_SUPPORT_DIR = CMakeFiles\client.dir
+  INCLUDES = -isystem E:/dev/libs/asio/include -isystem E:/dev/libs/luajit/include
+  OBJECT_DIR = CMakeFiles\lowley.dir
+  OBJECT_FILE_DIR = CMakeFiles\lowley.dir
+  TARGET_SUPPORT_DIR = CMakeFiles\lowley.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target client
+# Link build statements for EXECUTABLE target lowley
 
 
 #############################################
-# Link the executable client.exe
+# Link the executable lowley.exe
 
-build client.exe: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/client.cpp.obj | E$:/dev/libs/luajit/lib/libluajit.a
+build lowley.exe: CXX_EXECUTABLE_LINKER__lowley_Debug CMakeFiles/lowley.dir/main.cpp.obj | E$:/dev/libs/luajit/lib/libluajit.a
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = E:/dev/libs/luajit/lib/libluajit.a  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\client.dir
+  LINK_LIBRARIES = -lws2_32  -lmswsock  E:/dev/libs/luajit/lib/libluajit.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lowley.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = client.exe
-  TARGET_IMPLIB = libclient.dll.a
-  TARGET_PDB = client.exe.dbg
-  TARGET_SUPPORT_DIR = CMakeFiles\client.dir
-
-# =============================================================================
-# Object build statements for EXECUTABLE target server
-
-
-#############################################
-# Order-only phony target for server
-
-build cmake_object_order_depends_target_server: phony || .
-
-build CMakeFiles/server.dir/server.cpp.obj: CXX_COMPILER__server_unscanned_Debug E$:/dev/projects/lowely/server.cpp || cmake_object_order_depends_target_server
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\server.dir\server.cpp.obj.d
-  FLAGS = -g
-  INCLUDES = -isystem E:/dev/libs/asio/include
-  OBJECT_DIR = CMakeFiles\server.dir
-  OBJECT_FILE_DIR = CMakeFiles\server.dir
-  TARGET_SUPPORT_DIR = CMakeFiles\server.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target server
-
-
-#############################################
-# Link the executable server.exe
-
-build server.exe: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/server.cpp.obj
-  CONFIG = Debug
-  FLAGS = -g
-  LINK_LIBRARIES = -lws2_32  -lmswsock  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\server.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = server.exe
-  TARGET_IMPLIB = libserver.dll.a
-  TARGET_PDB = server.exe.dbg
-  TARGET_SUPPORT_DIR = CMakeFiles\server.dir
+  TARGET_FILE = lowley.exe
+  TARGET_IMPLIB = liblowley.dll.a
+  TARGET_PDB = lowley.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\lowley.dir
 
 
 #############################################
@@ -143,9 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build client: phony client.exe
-
-build server: phony server.exe
+build lowley: phony lowley.exe
 
 # =============================================================================
 # Folder targets.
@@ -155,7 +115,7 @@ build server: phony server.exe
 #############################################
 # Folder: E:/dev/projects/lowely/build
 
-build all: phony client.exe server.exe
+build all: phony lowley.exe
 
 # =============================================================================
 # Built-in targets

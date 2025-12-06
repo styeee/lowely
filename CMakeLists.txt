@@ -5,9 +5,6 @@ project(lowley)
 find_package(LuaJIT REQUIRED)
 find_package(asio REQUIRED)
 
-add_executable(client client.cpp)
-target_link_libraries(client LuaJIT::LuaJIT)
-target_link_libraries(client asio::asio)
-
-add_executable(server server.cpp)
-target_link_libraries(server asio::asio ws2_32 mswsock)
+add_executable(lowley main.cpp)
+target_link_libraries(lowley asio::asio ws2_32 mswsock)
+target_link_libraries(lowley LuaJIT::LuaJIT)
