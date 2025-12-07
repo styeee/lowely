@@ -1,0 +1,14 @@
+[
+{
+  "directory": "E:/dev/projects/lowely/build",
+  "command": "E:\\dev\\mingw\\bin\\g++.exe -isystem E:/dev/libs/asio/include -g -o CMakeFiles\\lowley.dir\\main.cpp.obj -c E:\\dev\\projects\\lowely\\main.cpp",
+  "file": "E:/dev/projects/lowely/main.cpp",
+  "output": "E:/dev/projects/lowely/build/CMakeFiles/lowley.dir/main.cpp.obj"
+},
+{
+  "directory": "E:/dev/projects/lowely/build",
+  "command": "E:\\dev\\mingw\\bin\\g++.exe -isystem E:/dev/libs/asio/include -isystem E:/dev/libs/googletest/include -g -o CMakeFiles\\test_lowley.dir\\test.cpp.obj -c E:\\dev\\projects\\lowely\\test.cpp",
+  "file": "E:/dev/projects/lowely/test.cpp",
+  "output": "E:/dev/projects/lowely/build/CMakeFiles/test_lowley.dir/test.cpp.obj"
+}
+]

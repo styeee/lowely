@@ -1,0 +1,7 @@
+# ninja log v7
+36	13215	7867260509984036	CMakeFiles/lowley.dir/main.cpp.obj	5541c875244ffeed
+27	5683	7864044806884436	CMakeFiles/client.dir/client.cpp.obj	931bedc8c54ca504
+7	6388	7864048788404642	CMakeFiles/server.dir/server.cpp.obj	484ab56d3afb6b03
+13216	13841	7867260641784877	lowley.exe	cf0535270b28c7b2
+32	7550	7867263747150196	CMakeFiles/test_lowley.dir/test.cpp.obj	40fd57755f69a736
+7550	7975	7867263822336351	test_lowley.exe	9186a67111b26fb2
